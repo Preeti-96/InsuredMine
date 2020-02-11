@@ -1,0 +1,336 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200211.124719.7556.0.001.json",
+    "dumpEventTime": "2020-02-11T12:47:19Z",
+    "dumpEventTimeStamp": "1581405439011",
+    "processId": 7556,
+    "cwd": "/home/preeti/Learn/Placement_assessment/insuredMine",
+    "commandLine": [
+      "node",
+      "./bin/www"
+    ],
+    "nodejsVersion": "v12.2.0",
+    "glibcVersionRuntime": "2.26",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "12.2.0",
+      "v8": "7.4.288.21-node.17",
+      "uv": "1.28.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.38.0",
+      "napi": "4",
+      "llhttp": "1.1.3",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1b",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.2.0/node-v12.2.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.2.0/node-v12.2.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "4.12.14-lp151.28.36-default",
+    "osVersion": "#1 SMP Fri Dec 6 13:50:27 UTC 2019 (8f4a495)",
+    "osMachine": "x86_64",
+    "host": "linux-50hn"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000aa94ed",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [node]"
+    },
+    {
+      "pc": "0x000000000098d653",
+      "symbol": "node::OnFatalError(char const*, char const*) [node]"
+    },
+    {
+      "pc": "0x0000000000b077ce",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [node]"
+    },
+    {
+      "pc": "0x0000000000b07b49",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [node]"
+    },
+    {
+      "pc": "0x0000000000f12c05",
+      "symbol": " [node]"
+    },
+    {
+      "pc": "0x0000000000f1d56b",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [node]"
+    },
+    {
+      "pc": "0x0000000000f1e287",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [node]"
+    },
+    {
+      "pc": "0x0000000000f20d25",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [node]"
+    },
+    {
+      "pc": "0x0000000000eebd50",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationSpace) [node]"
+    },
+    {
+      "pc": "0x00000000011bdb5e",
+      "symbol": "v8::internal::Runtime_AllocateInNewSpace(int, unsigned long*, v8::internal::Isolate*) [node]"
+    },
+    {
+      "pc": "0x0000000001a86142",
+      "symbol": " [node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2150088704,
+    "totalCommittedMemory": 2147919400,
+    "usedMemory": 2130669808,
+    "availableMemory": 53911016,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 524288,
+        "committedMemory": 32024,
+        "capacity": 523976,
+        "used": 31712,
+        "available": 492264
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 1343256,
+        "capacity": 1047952,
+        "used": 294144,
+        "available": 753808
+      },
+      "old_space": {
+        "memorySize": 2141839360,
+        "committedMemory": 2141275136,
+        "capacity": 2129272560,
+        "used": 2125382160,
+        "available": 3890400
+      },
+      "code_space": {
+        "memorySize": 688128,
+        "committedMemory": 580544,
+        "capacity": 560800,
+        "used": 560800,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1052672,
+        "committedMemory": 801336,
+        "capacity": 595520,
+        "used": 595520,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 3837952,
+        "committedMemory": 3837952,
+        "capacity": 3802016,
+        "used": 3802016,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3456,
+        "used": 3456,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047952,
+        "used": 0,
+        "available": 1047952
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 95.2466,
+    "kernelCpuSeconds": 1.51388,
+    "cpuConsumptionPercent": 182.567,
+    "maxRss": 2315100160,
+    "pageFaults": {
+      "IORequired": 0,
+      "IONotRequired": 638132
+    },
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 44.464,
+    "kernelCpuSeconds": 0.544637,
+    "cpuConsumptionPercent": 84.922,
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "GS_LIB": "/home/preeti/.fonts",
+    "KDE_FULL_SESSION": "true",
+    "NVM_DIR": "/home/preeti/.nvm",
+    "LS_COLORS": "no=00:fi=00:di=01;34:ln=00;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=41;33;01:ex=00;32:*.cmd=00;32:*.exe=01;32:*.com=01;32:*.bat=01;32:*.btm=01;32:*.dll=01;32:*.tar=00;31:*.tbz=00;31:*.tgz=00;31:*.rpm=00;31:*.deb=00;31:*.arj=00;31:*.taz=00;31:*.lzh=00;31:*.lzma=00;31:*.zip=00;31:*.zoo=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.tb2=00;31:*.tz2=00;31:*.tbz2=00;31:*.xz=00;31:*.avi=01;35:*.bmp=01;35:*.dl=01;35:*.fli=01;35:*.gif=01;35:*.gl=01;35:*.jpg=01;35:*.jpeg=01;35:*.mkv=01;35:*.mng=01;35:*.mov=01;35:*.mp4=01;35:*.mpg=01;35:*.pcx=01;35:*.pbm=01;35:*.pgm=01;35:*.png=01;35:*.ppm=01;35:*.svg=01;35:*.tga=01;35:*.tif=01;35:*.webm=01;35:*.webp=01;35:*.wmv=01;35:*.xbm=01;35:*.xcf=01;35:*.xpm=01;35:*.aiff=00;32:*.ape=00;32:*.au=00;32:*.flac=00;32:*.m4a=00;32:*.mid=00;32:*.mp3=00;32:*.mpc=00;32:*.ogg=00;32:*.voc=00;32:*.wav=00;32:*.wma=00;32:*.wv=00;32:",
+    "HOSTTYPE": "x86_64",
+    "TERMINAL_EMULATOR": "JetBrains-JediTerm",
+    "XAUTHLOCALHOSTNAME": "linux-50hn",
+    "LESSCLOSE": "lessclose.sh %s %s",
+    "XKEYSYMDB": "/usr/X11R6/lib/X11/XKeysymDB",
+    "_": "/home/preeti/.nvm/versions/node/v12.2.0/bin/node",
+    "LANG": "en_US.UTF-8",
+    "WINDOWMANAGER": "/usr/bin/startkde",
+    "LESS": "-M -I -R",
+    "DISPLAY": ":0",
+    "JAVA_ROOT": "/usr/lib64/jvm/jre-11-openjdk",
+    "HOSTNAME": "linux-50hn",
+    "OLDPWD": "/opt/intelliJ/bin",
+    "CONFIG_SITE": "/usr/share/site/x86_64-unknown-linux-gnu",
+    "CSHEDIT": "emacs",
+    "GPG_TTY": "/dev/pts/0",
+    "AUDIODRIVER": "pulseaudio",
+    "LESS_ADVANCED_PREPROCESSOR": "no",
+    "COLORTERM": "1",
+    "NVM_CD_FLAGS": "",
+    "JAVA_HOME": "/usr/lib64/jvm/jre-11-openjdk",
+    "ALSA_CONFIG_PATH": "/etc/alsa-pulse.conf",
+    "MACHTYPE": "x86_64-suse-linux",
+    "XDG_VTNR": "7",
+    "QEMU_AUDIO_DRV": "pa",
+    "MINICOM": "-c on",
+    "QT_SYSTEM_DIR": "/usr/share/desktop-data",
+    "OSTYPE": "linux",
+    "XDG_SESSION_ID": "2",
+    "USER": "preeti",
+    "PAGER": "less",
+    "DESKTOP_SESSION": "/usr/share/xsessions/plasma5",
+    "MORE": "-sl",
+    "PWD": "/home/preeti/Learn/Placement_assessment/insuredMine",
+    "SSH_ASKPASS": "/usr/lib/ssh/ssh-askpass",
+    "HOME": "/home/preeti",
+    "HOST": "linux-50hn",
+    "XCURSOR_SIZE": "0",
+    "XNLSPATH": "/usr/share/X11/nls",
+    "XDG_SESSION_TYPE": "x11",
+    "XDG_DATA_DIRS": "/home/preeti/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share",
+    "XDG_SESSION_DESKTOP": "KDE",
+    "PROFILEREAD": "true",
+    "DESKTOP_STARTUP_ID": "linux-50hn;1581402760;698126;2268_TIME384655",
+    "GTK_MODULES": "canberra-gtk-module",
+    "FROM_HEADER": "",
+    "MAIL": "/var/spool/mail/preeti",
+    "LESSKEY": "/etc/lesskey.bin",
+    "SHELL": "/bin/bash",
+    "TERM": "xterm-256color",
+    "XDG_SESSION_CLASS": "user",
+    "XDG_SEAT_PATH": "/org/freedesktop/DisplayManager/Seat0",
+    "QT_IM_MODULE": "xim",
+    "XMODIFIERS": "@im=local",
+    "XCURSOR_THEME": "Bibata_Dodger_Blue",
+    "LS_OPTIONS": "-N --color=tty -T 0",
+    "NVM_BIN": "/home/preeti/.nvm/versions/node/v12.2.0/bin",
+    "XDG_CURRENT_DESKTOP": "KDE",
+    "PYTHONSTARTUP": "/etc/pythonstart",
+    "XDG_SEAT": "seat0",
+    "SHLVL": "4",
+    "G_FILENAME_ENCODING": "@locale,UTF-8,ISO-8859-15,CP1252",
+    "MANPATH": "/home/preeti/.nvm/versions/node/v12.2.0/share/man:/usr/local/man:/usr/share/man",
+    "XSESSION_IS_UP": "yes",
+    "LOGNAME": "preeti",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "XAUTHORITY": "/home/preeti/.Xauthority",
+    "JRE_HOME": "/usr/lib64/jvm/java-11-openjdk-11",
+    "XDG_SESSION_PATH": "/org/freedesktop/DisplayManager/Session1",
+    "QT_AUTO_SCREEN_SCALE_FACTOR": "0",
+    "XDG_CONFIG_DIRS": "/etc/xdg",
+    "PATH": "/home/preeti/Learn/Placement_assessment/insuredMine/node_modules/.bin:/home/preeti/Learn/Placement_assessment/insuredMine/node_modules/.bin:/home/preeti/.nvm/versions/node/v12.2.0/bin:/home/preeti/bin:/usr/local/bin:/usr/bin:/bin",
+    "JAVA_BINDIR": "/usr/lib64/jvm/jre-11-openjdk/bin",
+    "KDE_SESSION_UID": "1000",
+    "KDE_SESSION_VERSION": "5",
+    "SDL_AUDIODRIVER": "pulse",
+    "G_BROKEN_FILENAMES": "1",
+    "QT_IM_SWITCHER": "imsw-multi",
+    "HISTSIZE": "1000",
+    "SESSION_MANAGER": "local/linux-50hn:@/tmp/.ICE-unix/2215,unix/linux-50hn:/tmp/.ICE-unix/2215",
+    "CPU": "x86_64",
+    "CVS_RSH": "ssh",
+    "LESSOPEN": "lessopen.sh %s",
+    "GTK_IM_MODULE": "cedilla"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 65536,
+      "hard": 65536
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 4096,
+      "hard": 4096
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 47006,
+      "hard": 47006
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib64/libdl.so.2",
+    "/lib64/librt.so.1",
+    "/usr/lib64/libstdc++.so.6",
+    "/lib64/libm.so.6",
+    "/lib64/libgcc_s.so.1",
+    "/lib64/libpthread.so.0",
+    "/lib64/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2"
+  ]
+}
